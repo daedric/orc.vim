@@ -2,11 +2,11 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword orcKeywords import site signal stop
+syn keyword orcKeywords import site signal stop include null
 syn keyword orcBuiltinSite Iff Ift Signal Stop Eq Not Sub IsNil And Or Div Mul Mod Stop Signal Eq Inequal Less Leq Greater Greq Let Print UMinus Add Concat Sub TypeName Site_index
 syn keyword orcBuiltinSite Cons Record Tuple head tail fst snd empty TupleArityChecker
 syn keyword orcCondition if then else
-syn match orcOperators display "+\|-\|/\|*\|=\|/=\|&\|||\|:>\|<:\|%"
+syn match orcOperators display "+\|-\|/\|*\|=\|/=\|&\|||\|:>\|<:\|%\|{.\|.}"
 syn keyword orcBool true false
 syn keyword orcSpecial #
 
